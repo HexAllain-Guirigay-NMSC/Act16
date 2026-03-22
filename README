@@ -1,0 +1,59 @@
+# GIS API Project (ExpressJS)
+
+## 📌 Description
+This is a simple REST API built using Express.js for managing GIS locations.
+
+---
+
+## ⚙️ Requirements
+- Node.js installed
+- MySQL / phpMyAdmin
+- XAMPP (or any MySQL server)
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Download the Repository
+Download the project as a ZIP file or clone it from GitHub.
+
+---
+
+### 2. Install Dependencies
+Open a terminal inside the project folder and run:
+
+```bash
+npm install
+
+###3. Import the Database
+Open phpMyAdmin
+Create a database named gis_db
+Click Import
+Upload the file gis_db.sql
+
+##4. Configure Database Connection
+
+Open index.js and update the database settings if needed:
+host: 'localhost',
+user: 'root',
+password: '',
+database: 'gis_db'
+
+##5. Run the Server
+
+In the terminal, run:
+node index.js
+The server will run at:
+http://localhost:5000
+
+📡 API Endpoints
+Authentication
+*POST /api/register
+*POST /api/login
+*POST /api/logout
+*Locations (GIS)
+*POST /api/locations
+*GET /api/locations
+*GET /api/locations/:id
+*PUT /api/locations
+*DELETE /api/locations
